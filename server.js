@@ -5,7 +5,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 var cors = require("cors");
 dotenv.config();
 
-let authKey = process.env.prodkey;
+let authKey = process.env.EP_PRODUCTION_KEY;
 
 // proxy middleware options
 /** @type {import('http-proxy-middleware/dist/types').Options} */
