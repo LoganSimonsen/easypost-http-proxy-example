@@ -1,4 +1,4 @@
-This is an example of using http-proxy-middleware to create a development server to make request to the EasyPost API. The reason you may use this when developing against the EasyPost API, is due to the fact that EasyPost rejects alls requests coming directly from a browser. So if you want 1 simple development server to test out any EasyPost functionality, this could be a good option for you.
+This is an example of using http-proxy-middleware to create a development server to make requests to the EasyPost API. The reason you may use this when developing against the EasyPost API, is due to the fact that EasyPost rejects alls requests coming directly from a browser. So if you want 1 simple development server to test out any EasyPost functionality and you are developing browser based applications, this could be a good option for you.
 
 ### Install Dependencies
 
@@ -6,7 +6,7 @@ This is an example of using http-proxy-middleware to create a development server
 npm install --save http-proxy-middleware cors express dotenv nodemon
 ```
 
-`nodemon` is technical optional, but can be helpful when making/testing changes to the server.
+`nodemon` is technically optional, but can be helpful when making/testing changes to the server.
 
 `cors` will enable cross-origin support
 
