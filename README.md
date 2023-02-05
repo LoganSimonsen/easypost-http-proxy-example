@@ -27,7 +27,8 @@ git touch .env
 File should look something like this:
 
 ```
+EP_TEST_KEY=E4321FDSA
 EP_PRODUCTION_KEY=E1234ASDF
 ```
 
-Replace `E12334asdf` with your EasyPost API key which you can get from the [EasyPost Dashboard](https://www.easypost.com/account/api-keys) (development accounts are free)
+Replace the example keys above with your EasyPost API keys which you can get from the [EasyPost Dashboard](https://www.easypost.com/account/api-keys) (development accounts are free)

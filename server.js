@@ -5,23 +5,16 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 var cors = require("cors");
 dotenv.config();
 
+//Note that some EasyPost endpoints require a production API Key, such as the /carrier_accounts endpoint.
+//let authKey = process.env.EP_PRODUCTION_KEY;
 let authKey = process.env.EP_PRODUCTION_KEY;
 
 // proxy middleware options
 /** @type {import('http-proxy-middleware/dist/types').Options} */
 
-const onProxyReq = function (proxyReq, req, res) {
-  // add new header to request
-  proxyReq.setHeader("Origin", "foobar");
-  console.log(req.query.auth);
-};
-
 const options = {
   target: "https://api.easypost.com/v2", // target host
   changeOrigin: true, // needed for virtual hosted sites
-  headers: {
-    Origin: "https://demo-app292910129.com",
-  },
   ws: true, // proxy websockets
   auth: authKey,
   logLevel: "debug",
@@ -37,7 +30,7 @@ const options = {
 };
 
 // create the proxy (without context)
-const exampleProxy = createProxyMiddleware(options, onProxyReq);
+const exampleProxy = createProxyMiddleware(options);
 
 // mount `exampleProxy` in web server
 const app = express();
