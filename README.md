@@ -3,7 +3,7 @@ This is an example of using http-proxy-middleware to create a development server
 ### Install Dependencies
 
 ```
-npm install --save http-proxy-middleware cors express dotenv nodemon
+npm install
 ```
 
 `nodemon` is technically optional, but can be helpful when making/testing changes to the server.
