@@ -12,12 +12,6 @@ npm install
 
 `http-proxy-middleware` will help proxy HTTP requests between our front end application and the EasyPost API.
 
-### Starting the Server
-
-```
-npm nodemon server
-```
-
 ### Create .env File
 
 ```
@@ -32,3 +26,10 @@ EP_PRODUCTION_KEY=E1234ASDF
 ```
 
 Replace the example keys above with your EasyPost API keys which you can get from the [EasyPost Dashboard](https://www.easypost.com/account/api-keys) (development accounts are free)
+
+
+### Starting the Server
+
+```
+npm nodemon server
+```
