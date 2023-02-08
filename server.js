@@ -6,8 +6,8 @@ var cors = require("cors");
 dotenv.config();
 
 //Note that some EasyPost endpoints require a production API Key, such as the /carrier_accounts endpoint.
-//let authKey = process.env.EP_PRODUCTION_KEY;
 let authKey = process.env.EP_PRODUCTION_KEY;
+// let authKey = process.env.EP_PRODUCTION_KEY;
 
 // proxy middleware options
 /** @type {import('http-proxy-middleware/dist/types').Options} */
