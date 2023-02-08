@@ -4,6 +4,79 @@ body {
   font-size: medium;
 }
 
+.form {
+  width: 90vw;
+  max-width: 20em;
+}
+
+button {
+  margin-top: 2rem;
+}
+
+input {
+  border: 1px solid;
+  padding: 0.3em;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 6em;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+select {
+  font-size: 16px;
+}
+
+.postal-code {
+  width: 50%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.renderjson {
+  background-color: #222;
+}
+.renderjson a {
+  text-decoration: none;
+}
+.renderjson .disclosure {
+  color: crimson;
+  font-size: 150%;
+}
+.renderjson .syntax {
+  color: grey;
+}
+.renderjson .string {
+  color: red;
+}
+.renderjson .number {
+  color: white;
+}
+.renderjson .boolean {
+  color: plum;
+}
+.renderjson .key {
+  color: lightblue;
+}
+.renderjson .keyword {
+  color: lightgoldenrodyellow;
+}
+.renderjson .object.syntax {
+  color: lightseagreen;
+}
+.renderjson .array.syntax {
+  color: lightsalmon;
+}
+
 @media only screen and (max-width: 768px) {
   b {
     font-size: 20px;
