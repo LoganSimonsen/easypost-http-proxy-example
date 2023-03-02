@@ -44,6 +44,7 @@ select {
 }
 .renderjson {
   background-color: #222;
+  font-size: smaller;
 }
 .renderjson a {
   text-decoration: none;

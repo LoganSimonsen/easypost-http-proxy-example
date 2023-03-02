@@ -15,6 +15,7 @@ let authKey = process.env.EP_PRODUCTION_KEY;
 const options = {
   target: "https://api.easypost.com/v2", // target host
   changeOrigin: true, // needed for virtual hosted sites
+  origin: "https://easytools-spa.netlify.app",
   ws: true, // proxy websockets
   auth: authKey,
   logLevel: "debug",
