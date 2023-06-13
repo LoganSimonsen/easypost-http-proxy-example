@@ -15,7 +15,7 @@ npm install
 ### Create .env File
 
 ```
-git touch .env
+touch .env
 ```
 
 File should look something like this:
